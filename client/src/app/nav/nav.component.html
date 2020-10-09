@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
+      
         <a class="navbar-brand" routerLink='/'>Dating App</a>
         
         
@@ -17,6 +18,9 @@
              
             </ng-container>  
    
+            <li class="nav-item">
+              <a class="nav-link" routerLink='/errors' routerLinkActive='active'>Errors</a>
+            </li>
           </ul>
           <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>
               <a class="dropdown-toggle text-light" dropdownToggle >Welcome {{user.username| titlecase}}</a>

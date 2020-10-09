@@ -24,7 +24,7 @@ Login(){
   this.accountService.login(this.model).subscribe(response=> {
     this.router.navigateByUrl('/members');
     console.log("login res is:"+response);
-  },error=>{console.log(error)});
+  });
 
 }
 logout(){
